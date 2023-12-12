@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StarCraft Match Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional CSS styles for the match announcement animation */
+    .match-announcement {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 0.5s ease forwards;
+      margin-bottom: 20px;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>StarCraft Match Generator</h1>
+  <div>
+    <label>Enter Team 1 players:</label><br>
+    <input type="text" id="team1-input" placeholder="Enter player names separated by commas"><br>
+    <label>Enter Team 2 players:</label><br>
+    <input type="text" id="team2-input" placeholder="Enter player names separated by commas"><br>
+    <button id="generate-btn">Generate Matches</button>
+  </div>
+  
+  <div id="match-window">
+    <h2>Matches</h2>
+    <div id="matches"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // JavaScript code (script.js) remains unchanged
+  </script>
+</body>
+</html>

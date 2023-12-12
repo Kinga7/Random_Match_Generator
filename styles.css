@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffd633;
+  }
+  
+  /* Match announcement animation */
+  .match-announcement {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease forwards;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Match window styles */
+  #match-window {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  #match-window h2 {
+    margin-bottom: 10px;
+  }
+  
+  #matches p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+.match-announcement {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
